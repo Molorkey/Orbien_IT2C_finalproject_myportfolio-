@@ -8,11 +8,12 @@
   		<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&display=swap" rel="stylesheet">
   </head>
 	<header>
-
+			
+				
 		<?php
 		echo '<h1>My<span>Portfolio</span></h1>';
 		?>
-
+		
 		<nav>
 			<ul>
 				
@@ -25,16 +26,22 @@
 	</header>
 	<body>
 		<div class="content-wrapper">
-			<img src="images/1.png">
+			<?php echo '<img src="images/choco1.png"/>'; ?>
 			<div class="text-wrapper">
-				<h2 id="first">This is Choco</h2>
+
+				<?php
+				echo '<h2 id="first">This is my Portfolio!</h2>';
+				?>
 			<div class="content">
 
 				<?php // xml file
-					$file = simplexml_load_file('files/portfolio.xml');
+
+					$file = file_get_contents('files/portfolio.xml');
+					echo '<h1 >Im a gamer and a</h1>';
+
+
 				?>
 
-				<p> Shown here is a picture of my cat Choco, who is very talkative and enjoys playing with me all of the time, resulting in me getting scratched. She also enjoys cuddling with her sister all of the time. She is a genuine black puspin of the purest kind.We adopted them since the cats mother was unable to care for them, and I had always wanted a cat to play with; fortunately, we happened to be in the area when they were available for adoption. Choco is a very social cat who enjoys going outside even though she is not permitted to do so since she frequents filthy areas and returns home with dirt on her coat and fur. But this cat holds a special place in my heart since she has helped me get through some difficult times throughout this pandemic.</p>
 				
 			</div>
 		</div>		
